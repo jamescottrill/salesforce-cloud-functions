@@ -1,0 +1,2 @@
+simple-salesforce
+google-cloud-secret-manager

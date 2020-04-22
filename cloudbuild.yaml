@@ -1,0 +1,14 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - functions
+      - deploy
+      - ${_FUNCTION}
+      - --source=https://source.developers.google.com/projects/$PROJECT_ID/repos/${_REPO}/revisions/${_REVISIONS}/paths/${_FOLDER}
+      - --trigger-topic=${_TOPIC}
+      - --service-account=${_SERVICE_ACCOUNT}
+      - --runtime=${_RUNTIME}
+      - --vpc-connector=${_VPC}
+      - --env-vars-file=${_VARS_FILE}
+      - --entry-point=${_ENTRY_POINT}
+      - --region=${_REGION}

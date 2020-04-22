@@ -1,0 +1,5 @@
+google-cloud-error-reporting
+simple-salesforce
+google-cloud-secret-manager
+sqlalchemy
+pymysql
